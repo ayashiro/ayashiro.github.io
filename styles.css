@@ -132,7 +132,7 @@ h3 {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     padding-top: var(--nav-height);
@@ -196,7 +196,7 @@ h3 {
 
 /* Sections */
 .section {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 /* Cards */
@@ -296,6 +296,80 @@ h3 {
 .tag:hover {
     background: var(--accent-glow);
     border-color: var(--accent-color);
+}
+
+/* Education Section */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.timeline-date {
+    min-width: 180px;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: var(--text-primary);
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .timeline-date {
+        min-width: auto;
+    }
+}
+
+/* Certificates Section */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certificate-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cert-date {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.cert-content h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
 }
 
 /* Contact Section */
